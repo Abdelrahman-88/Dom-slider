@@ -1,0 +1,71 @@
+body {
+    font-family: 'segoe ui light';
+}
+
+.item {
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.item:hover .item-caption {
+    bottom: 20px;
+}
+
+.img-item {
+    cursor: pointer;
+}
+
+.item-caption {
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: -110px;
+    -webkit-transition: bottom .5s;
+    -o-transition: bottom .5s;
+    transition: bottom .5s;
+}
+
+.lightbox-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-item {
+    position: relative;
+}
+
+.lightbox-item i {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    -webkit-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+.lightbox-item i:hover {
+    color: rgb(139, 3, 3);
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+#close {
+    top: 10px;
+    right: 10px;
+}
